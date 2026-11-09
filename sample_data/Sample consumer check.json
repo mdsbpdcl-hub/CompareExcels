@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "saved": "2026-11-09T15:30:00",
+  "pairs": [
+    {
+      "a_sheet": "ConsumerData",
+      "b_sheet": "UpdatedConsumerData",
+      "a_header_row": 4,
+      "b_header_row": 1,
+      "keys": [
+        {
+          "a": "Consumer ID",
+          "b": "CA Number"
+        }
+      ],
+      "columns": [
+        {
+          "a": "Name",
+          "b": "Name",
+          "compare": true
+        },
+        {
+          "a": "Division",
+          "b": "Division",
+          "compare": true
+        },
+        {
+          "a": "Category",
+          "b": "Category",
+          "compare": true
+        },
+        {
+          "a": "Load (kW)",
+          "b": "Load (kW)",
+          "compare": true
+        },
+        {
+          "a": "Arrear (Rs)",
+          "b": "Arrear Amount",
+          "compare": true
+        },
+        {
+          "a": "Last Bill Date",
+          "b": "Last Bill Date",
+          "compare": true
+        },
+        {
+          "a": "Mobile",
+          "b": "Mobile No",
+          "compare": true
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "trim": true,
+    "collapse_spaces": false,
+    "ignore_case": true,
+    "leading_zeros": false,
+    "numeric": true,
+    "numeric_columns": [
+      "Arrear (Rs)",
+      "Load (kW)"
+    ],
+    "dates": true,
+    "date_columns": [
+      "Last Bill Date"
+    ],
+    "date_order": "none",
+    "blank_equals_empty": false,
+    "symbols": false,
+    "symbol_chars": "",
+    "line_breaks": false,
+    "ignore_formatting": true
+  },
+  "key_rules": {
+    "trim": true,
+    "ignore_case": false,
+    "leading_zeros": false
+  },
+  "dup_policy": "keep_first",
+  "compare_formulas": false,
+  "schema_compare": false,
+  "highlight_only_b": false,
+  "filenames": {
+    "highlighted": "File_B_Comparison_Highlighted.xlsx",
+    "report": "Detailed_Before_After_Comparison.xlsx"
+  }
+}
